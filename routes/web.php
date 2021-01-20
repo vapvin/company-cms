@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/49week-cms', function(){
+Route::get('/', function(){
     return view('pages.dashboard');
 });
+
+// Categories
+Route::get('/category', [CategoryController::class, 'index']);
