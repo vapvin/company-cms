@@ -22,4 +22,4 @@ Route::get('/', function(){
 });
 
 // Categories
-Route::get('/category', [CategoryController::class, 'index']);
+Route::get('/category', 'CategoryController@index')->name('category.index');
